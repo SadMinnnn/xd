@@ -1,0 +1,40 @@
+﻿[
+  {
+    "id": 1,
+    "Name": "Rick Sanchez",
+    "Status": "Alive",
+    "Spicies": "Human",
+    "Location": "Earth",
+    "Gender": "Male",
+    "Image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    
+  },
+  {
+    "id": 2, 
+    "Name": "Morty Smith",
+    "Status": "Alive",
+    "Spicies": "Human",
+    "Location": "Earth",
+    "Gender": "Male",
+    "Image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+  },
+  {
+    "id":2,
+    "Name": "Goku",
+    "Status": "Alive",
+    "Spicies": "Saiyan",
+    "Location": "Earth",
+    "Gender": "Male",
+    "Image": "https://i.ytimg.com/vi/luPBDjGZufU/maxresdefault.jpg"
+  },
+  {
+    "id": 10,
+    "Name": "Lionel Andres Messi Cuccittini (DIOS y el pai tuyo)",
+    "Status": "Alive",
+    "Spicies": "GOAT",
+    "Location": "Earth",
+    "Gender": "GOD",
+    "Image": "https://www.elfinanciero.com.mx/resizer/yEUhFaBLfORGAvWN6lQ9ZkXs-gA=/1200x630/filters:format(jpg):quality(70):focal(679x208:689x218)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/W67OJ4Q27FCMTEYLL5BWA5V6TI.jpg"
+  }
+  
+]

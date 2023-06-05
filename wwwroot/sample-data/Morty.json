@@ -1,0 +1,11 @@
+[
+{
+    "id": 2, 
+    "Name": "Morty Smith",
+    "Status": "Alive",
+    "Spicies": "Human",
+    "Location": "Earth",
+    "Gender": "Male",
+    "Image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+  }
+]

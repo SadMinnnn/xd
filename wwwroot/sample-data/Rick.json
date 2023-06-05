@@ -1,0 +1,13 @@
+
+[
+{
+    "id": 1,
+    "Name": "Rick Sanchez",
+    "Status": "Alive",
+    "Spicies": "Human",
+    "Location": "Earth",
+    "Gender": "Male",
+    "Image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    
+  }
+]

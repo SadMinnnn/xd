@@ -1,0 +1,66 @@
+@page "/contacto"
+
+<form @onsubmit="send">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre:</label>
+            <input @bind="nombre" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Correo</label>
+            <input @bind="correo" type="email" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Numero de telefono</label>
+            <input @bind="numtel" type="integer" class="form-control" id="exampleInputPassword1">
+        </div>
+         <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+            <input @bind="mensaje" type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">enviar</button>
+</form>
+
+@if(Show){
+    <p>Hola, soy @nombre quiero contactarme con ustedes por lo siguiente:</p>
+    <p> @mensaje </p>
+    <p> pueden comunicarse conmigo en:</p>
+    <p> correo electronico: @correo </p>
+    <p> telefono: @numtel </p>
+}
+
+@code{
+    private string? nombre {get;set;}
+    private string? correo {get;set;}
+
+    private string? numtel {get;set;}
+
+    private string? mensaje {get; set;}   
+    public bool Show = false;
+    private List<UserDTO> Users=new List<UserDTO>();
+
+    public void send(){
+
+        if (this.nombre != "" && this.correo !="" && this.numtel!="" && this.mensaje !=""){
+            this.Show=true;
+            this.Users.Add(new UserDTO(this.nombre,this.correo,this.numtel,this.mensaje));
+        }
+    }
+
+    class UserDTO{
+        private string nombre {get;set;}
+        private string correo {get;set;}
+        private string? numtel {get;set;}
+
+    private string? mensaje {get; set;}   
+        //crear constructor
+        public UserDTO(string nombre,string correo,string numtel,string mensaje){
+            this.nombre=nombre;
+            this.nombre=correo;
+            this.nombre=numtel;
+            this.nombre=mensaje;
+
+        }
+    }
+
+
+}

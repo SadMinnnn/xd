@@ -1,0 +1,54 @@
+@page "/rick/1/details"
+
+@inject HttpClient Http
+
+<PageTitle>Rick</PageTitle>
+
+@if (personajes == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Location</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var persona in personajes)
+            {
+                <tr>
+                    <td>@persona.Name</td>
+                    <td>@persona.Status</td>
+                    <td>@persona.Location</td>
+                    <td>
+                        <img src="@persona.Image" alt="Character Image" width="100" height="100" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private perso[]? personajes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        personajes = await Http.GetFromJsonAsync<perso[]>("sample-data/Rick.json"); 
+    }
+
+    public class perso
+    {
+        public string? Name { get; set; }
+        public string? Status { get; set; }
+        public string? Location { get; set; }
+        public string? Gender { get; set; }
+        public string? Image { get; set; }
+    }
+}

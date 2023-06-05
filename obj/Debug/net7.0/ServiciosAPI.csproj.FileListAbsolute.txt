@@ -1,0 +1,6 @@
+C:\Users\Samue\Downloads\formularios (1)\formularios\Formulario\obj\Debug\net7.0\ServiciosAPI.csproj.AssemblyReference.cache
+C:\Users\Samue\Downloads\formularios (1)\formularios\Formulario\obj\Debug\net7.0\ServiciosAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samue\Downloads\formularios (1)\formularios\Formulario\obj\Debug\net7.0\ServiciosAPI.AssemblyInfoInputs.cache
+C:\Users\Samue\Downloads\formularios (1)\formularios\Formulario\obj\Debug\net7.0\ServiciosAPI.AssemblyInfo.cs
+C:\Users\Samue\Downloads\formularios (1)\formularios\Formulario\obj\Debug\net7.0\ServiciosAPI.csproj.CoreCompileInputs.cache
+C:\Users\Samue\Downloads\formularios (1)\formularios\Formulario\obj\Debug\net7.0\ServiciosAPI.MvcApplicationPartsAssemblyInfo.cache
